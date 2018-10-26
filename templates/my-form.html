@@ -4,14 +4,12 @@
 <title>Thunderstorm feedback</title>
 <style>
 * {box-sizing: border-box}
-
 /* Add padding to containers */
 .container {
   padding: 285px;
   padding-top: 50px;
   padding-bottom: 50px;
 }
-
 /* Full-width input fields */
 input[type=text], input[type=password] {
   width: 100%;
@@ -20,20 +18,17 @@ input[type=text], input[type=password] {
   display: inline-block;
   border: none;
   background: #f1f1f1;
-  opacity: 0.2;
+  opacity: 1;
 }
-
 input[type=text]:focus, input[type=password]:focus {
   background-color: #ddd;
   outline: none;
 }
-
 /* Overwrite default styles of hr */
 hr {
   border: 1px solid #f1f1f1;
   margin-bottom: 25px;
 }
-
 /* Set a style for the submit/register button */
 .registerbtn {
   background-color: #4CAF50;
@@ -45,19 +40,15 @@ hr {
   width: 100%;
   opacity: 0.9;
 }
-
 .registerbtn:hover {
   opacity:1;
 }
-
-
-
 .signin {
   background-color: #f1f1f1;
   text-align: center;
 }
 body {
-    background-image: url('IMG-20181026-WA0023.jpg');
+    background-color: #6699ff;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;
@@ -68,6 +59,10 @@ img {
 </style>
 </head>
 <body>
+<h1 align="center" style="color:white;font-size: 300%">
+Thunderstorm Predictor</h1>
+<div align="center" style="color:white;font-size: 150%">This app predicts the percentage probability of occurrence of thunderstorm in the city Austin.<br>The user has to enter todays weather condition and click on submit button.<br>Temperatures have to be entered in fahrenheit.<br>Pressure in Inches<br>Wind speed in miles/hr<br>Precipitation in inches<br>Visibility in miles<br>
+</div>
 <form method="POST">
 <div class="container">
     <!--<input name="text">  -->
@@ -133,5 +128,6 @@ img {
     <input type="submit" class="registerbtn">
 </div>
 </form>
+<div align="center" style="font-size: 150%; color:white; padding:60px">Since we can't comment on the intensity of thunderstorm with the limited data available,<br> so we have rather planned to display the probability of the same in form of color codes.<br>1.The color red signifies that the occurance of thunderstorm is very certian.<br>2.The color yellow signifies that there's a slight chance of having a thunderstorm the next day<br>3.The color green signifies that it is safe outside, and the occurance of a thundersorm is very unlikely.</div>
 </body>
 </html>
