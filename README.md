@@ -16,4 +16,4 @@
 
 - We used PHP API to present our ideas as form which can take input the present day data and states the current situation.
 
-- Link to our slide description [here] (https://docs.google.com/presentation/d/19hIj4oPox4vm0yEkozE5twub3RP3EOnZiCPpZrhR-uM/edit?usp=sharing)
+- Link to our slide description (https://docs.google.com/presentation/d/19hIj4oPox4vm0yEkozE5twub3RP3EOnZiCPpZrhR-uM/edit?usp=sharing)
