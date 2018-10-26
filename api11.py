@@ -82,12 +82,7 @@ def my_form_post():
 
                                     'PrecipitationSumInches': PrecipitationSumInches1, 
 
-                                    'Fog': Fog1, 
-
-                                    'Rain': Rain1,
-
-                                    'Thunderstorms': Thunderstorms1,
-
+                                    
                             }
 
                         ],
@@ -125,8 +120,21 @@ def my_form_post():
 
 
             result = response.read()
-        
+            result1 = result.decode("utf-8")
+            resp = json.loads(result1)
+	    
 
+            outpt = resp['Results']
+            prob = outpt['output1']
+            prob1 = prob[0]['Scored Probabilities']
+            result= float(prob1)
+            
+            if result < 0.4:
+                return(render_template('redirect.html',result=result,color="#008000"))
+            elif result >= 0.4 and result < 0.6:
+                return(render_template('redirect.html',result=result,color="#FFFF00"))
+            else:
+                return(render_template('redirect.html',result=result,color="#FF0000"))
            # print(result)
 
         except urllib.error.HTTPError as error:
