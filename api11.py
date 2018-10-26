@@ -125,7 +125,7 @@ def my_form_post():
 
 
             result = response.read()
-            result1 = result["Fog"]
+        
 
            # print(result)
 
@@ -140,7 +140,7 @@ def my_form_post():
             print(error.info())
 
             print(json.loads(error.read().decode("utf8", 'ignore')))
-        return result1
+        return result
     else:
         return str(error.code)
 
