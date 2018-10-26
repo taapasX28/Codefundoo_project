@@ -1,72 +1,137 @@
+<!Doctype html>
+<html>
+<head>
+<title>Thunderstorm feedback</title>
+<style>
+* {box-sizing: border-box}
+
+/* Add padding to containers */
+.container {
+  padding: 285px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+  opacity: 0.2;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Overwrite default styles of hr */
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+
+/* Set a style for the submit/register button */
+.registerbtn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+.registerbtn:hover {
+  opacity:1;
+}
+
+
+
+.signin {
+  background-color: #f1f1f1;
+  text-align: center;
+}
+body {
+    background-image: url('IMG-20181026-WA0023.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+}
+img {
+      opacity: 0.1;
+}
+</style>
+</head>
+<body>
 <form method="POST">
-    <input name="text">
+<div class="container">
+    <!--<input name="text">  -->
 <br>
-    <label for="TempHighF">TempHighF:</label>
-      <input type="text" class="form-control" id="TempHighF" name="TempHighF" placeholder="What's your name?">
+    <label for="TempHighF" style="color: white"><b>TempHighF:</b></label>
+      <input type="text" class="form-control" id="TempHighF" name="TempHighF" placeholder="Enter the highest temperature of the day in Farenheit">
       <br>
-      <label for="TempAvgF">TempAvgF:</label>
-      <input type="text" class="form-control" id="TempAvgF" name="TempAvgF" placeholder="What's your name?">
+      <label for="TempAvgF" style="color: white"><b>TempAvgF:</b></label>
+      <input type="text" class="form-control" id="TempAvgF" name="TempAvgF" placeholder="Enter the average temperature of the day in Farenheit">
       <br>
-      <label for="TempLowF">TempLowF:</label>
-      <input type="text" class="form-control" id="TempLowF" name="TempLowF" placeholder="What's your name?">
+      <label for="TempLowF" style="color: white"><b>TempLowF:</b></label>
+      <input type="text" class="form-control" id="TempLowF" name="TempLowF" placeholder="Enter the lowest temperature of the day in Farenheit">
       <br>
-      <label for="DewPointHighF">DewPointHighF:</label>
-      <input type="text" class="form-control" id="DewPointHighF" name="DewPointHighF" placeholder="What's your name?">
+      <label for="DewPointHighF" style="color: white"><b>DewPointHighF:</b></label>
+      <input type="text" class="form-control" id="DewPointHighF" name="DewPointHighF" placeholder="Enter the highest dew point of the day in Farenheit">
       <br>
-      <label for="DewPointAvgF">DewPointAvgF:</label>
-      <input type="text" class="form-control" id="DewPointAvgF" name="DewPointAvgF" placeholder="What's your name?">
+      <label for="DewPointAvgF" style="color: white"><b>DewPointAvgF:</b></label>
+      <input type="text" class="form-control" id="DewPointAvgF" name="DewPointAvgF" placeholder="Enter the average dew point of the day in Farenheit">
       <br>
-      <label for="DewPointLowF">DewPointLowF:</label>
-      <input type="text" class="form-control" id="DewPointLowF" name="DewPointLowF" placeholder="What's your name?">
+      <label for="DewPointLowF" style="color: white"><b>DewPointLowF:</b></label>
+      <input type="text" class="form-control" id="DewPointLowF" name="DewPointLowF" placeholder="Enter the lowest dew point of the day in Farenheit">
       <br>
-      <label for="HumidityHighPercent">HumidityHighPercent:</label>
-      <input type="text" class="form-control" id="HumidityHighPercent" name="HumidityHighPercent" placeholder="What's your name?">
+      <label for="HumidityHighPercent" style="color: white"><b>HumidityHighPercent:</b></label>
+      <input type="text" class="form-control" id="HumidityHighPercent" name="HumidityHighPercent" placeholder="Enter the highest humidity percentage of the day">
       <br>
-      <label for="HumidityAvgPercent">HumidityAvgPercent:</label>
-      <input type="text" class="form-control" id="HumidityAvgPercent" name="HumidityAvgPercent" placeholder="What's your name?">
+      <label for="HumidityAvgPercent" style="color: white"><b>HumidityAvgPercent:</b></label>
+      <input type="text" class="form-control" id="HumidityAvgPercent" name="HumidityAvgPercent" placeholder="Enter the average humidity percentage of the day">
       <br>
-      <label for="HumidityLowPercent">HumidityLowPercent:</label>
-      <input type="text" class="form-control" id="HumidityLowPercent" name="HumidityLowPercent" placeholder="What's your name?">
+      <label for="HumidityLowPercent" style="color: white"><b>HumidityLowPercent:</b></label>
+      <input type="text" class="form-control" id="HumidityLowPercent" name="HumidityLowPercent" placeholder="Enter the lowest humidity percentage of the day">
       <br>
-      <label for="SeaLevelPressureHighInches">SeaLevelPressureHighInches:</label>
-      <input type="text" class="form-control" id="SeaLevelPressureHighInches" name="SeaLevelPressureHighInches" placeholder="What's your name?">
+      <label for="SeaLevelPressureHighInches" style="color: white"><b>SeaLevelPressureHighInches:</b></label>
+      <input type="text" class="form-control" id="SeaLevelPressureHighInches" name="SeaLevelPressureHighInches" placeholder="Enter the highest sea level pressure in inches">
       <br>
-      <label for="SeaLevelPressureAvgInches">SeaLevelPressureAvgInches:</label>
-      <input type="text" class="form-control" id="SeaLevelPressureAvgInches" name="SeaLevelPressureAvgInches" placeholder="What's your name?">
+      <label for="SeaLevelPressureAvgInches" style="color: white"><b>SeaLevelPressureAvgInches:</b></label>
+      <input type="text" class="form-control" id="SeaLevelPressureAvgInches" name="SeaLevelPressureAvgInches" placeholder="Enter the average sea level pressure in inches">
       <br>
-      <label for="SeaLevelPressureLowInches">SeaLevelPressureLowInches:</label>
-      <input type="text" class="form-control" id="SeaLevelPressureLowInches" name="SeaLevelPressureLowInches" placeholder="What's your name?">
+      <label for="SeaLevelPressureLowInches" style="color: white"><b>SeaLevelPressureLowInches:</b></label>
+      <input type="text" class="form-control" id="SeaLevelPressureLowInches" name="SeaLevelPressureLowInches" placeholder="Enter the lowest sea level pressure in inches">
       <br>
-      <label for="VisibilityHighMiles">VisibilityHighMiles:</label>
-      <input type="text" class="form-control" id="VisibilityHighMiles" name="VisibilityHighMiles" placeholder="What's your name?">
+      <label for="VisibilityHighMiles" style="color: white"><b>VisibilityHighMiles:</b></label>
+      <input type="text" class="form-control" id="VisibilityHighMiles" name="VisibilityHighMiles" placeholder="What was the highest visibility of the day in miles">
       <br>
-      <label for="VisibilityAvgMiles">VisibilityAvgMiles:</label>
-      <input type="text" class="form-control" id="VisibilityAvgMiles" name="VisibilityAvgMiles" placeholder="What's your name?">
+      <label for="VisibilityAvgMiles" style="color: white"><b>VisibilityAvgMiles:</b></label>
+      <input type="text" class="form-control" id="VisibilityAvgMiles" name="VisibilityAvgMiles" placeholder="Enter the average visibility of the day in miles">
       <br>
-      <label for="VisibilityLowMiles">VisibilityLowMiles:</label>
-      <input type="text" class="form-control" id="VisibilityLowMiles" name="VisibilityLowMiles" placeholder="What's your name?">
+      <label for="VisibilityLowMiles" style="color: white"><b>VisibilityLowMiles:</b></label>
+      <input type="text" class="form-control" id="VisibilityLowMiles" name="VisibilityLowMiles" placeholder="Enter the lowest visibility if the day in miles">
       <br>
-      <label for="WindHighMPH">WindHighMPH:</label>
-      <input type="text" class="form-control" id="WindHighMPH" name="WindHighMPH" placeholder="What's your name?">
+      <label for="WindHighMPH" style="color: white"><b>WindHighMPH:</b></label>
+      <input type="text" class="form-control" id="WindHighMPH" name="WindHighMPH" placeholder="Enter highest recorded wind speed for the day in miles per hour">
       <br>
-      <label for="WindAvgMPH">WindAvgMPH:</label>
-      <input type="text" class="form-control" id="WindAvgMPH" name="WindAvgMPH" placeholder="What's your name?">
+      <label for="WindAvgMPH" style="color: white"><b>WindAvgMPH:</b></label>
+      <input type="text" class="form-control" id="WindAvgMPH" name="WindAvgMPH" placeholder="Enter average recorded wind speed for the day in miles per hour">
       <br>
-      <label for="WindGustMPH">WindGustMPH:</label>
-      <input type="text" class="form-control" id="WindGustMPH" name="WindGustMPH" placeholder="What's your name?">
+      <label for="WindGustMPH" style="color: white"><b>WindGustMPH:</b></label>
+      <input type="text" class="form-control" id="WindGustMPH" name="WindGustMPH" placeholder="Enter recorded wind gust for the day in miles per hour">
       <br>
-      <label for="PrecipitationSumInches">PrecipitationSumInches:</label>
-      <input type="text" class="form-control" id="PrecipitationSumInches" name="PrecipitationSumInchese" placeholder="What's your name?">
-      <br>
-      <label for="Fog">Fog:</label>
-      <input type="text" class="form-control" id="Fog" name="Fog" placeholder="What's your name?">
-      <br>
-      <label for="Rain">Rain:</label>
-      <input type="text" class="form-control" id="Rain" name="Rain" placeholder="What's your name?">
-      <br>
-      <label for="Thunderstorms">Thunderstorms:</label>
-      <input type="text" class="form-control" id="Thunderstorms" name="Thunderstorms" placeholder="What's your name?">
+      <label for="PrecipitationSumInches" style="color: white"><b>PrecipitationSumInches:</b></label>
+      <input type="text" class="form-control" id="PrecipitationSumInches" name="PrecipitationSumInchese" placeholder="Enter recorded precipitation for the day in inches">
       <br>
 
-    <input type="submit">
+    <input type="submit" class="registerbtn">
+</div>
 </form>
+</body>
+</html>
