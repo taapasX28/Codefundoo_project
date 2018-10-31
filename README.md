@@ -14,6 +14,6 @@
 
 - Link to our slide description (https://docs.google.com/presentation/d/19hIj4oPox4vm0yEkozE5twub3RP3EOnZiCPpZrhR-uM/edit?usp=sharing)
 
-- **Run api11.py for execution.**
+- **Run application.py for execution.**
 
 - Run localhost ip then indicated on your browser.
